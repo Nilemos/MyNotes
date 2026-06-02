@@ -1,4 +1,4 @@
-package com.example.mynotes.Domain.model
+package com.example.mynotes.domain.model
 
 data class Note(
     val id: Long,

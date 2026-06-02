@@ -24,10 +24,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clipToBounds
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.example.mynotes.Domain.model.Note
+import com.example.mynotes.domain.model.Note
 import com.example.mynotes.ui.viewmodels.NotesViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
