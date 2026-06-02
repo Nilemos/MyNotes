@@ -1,0 +1,9 @@
+package com.example.mynotes.ui.viewmodels
+
+import com.example.mynotes.Domain.model.Note
+
+data class NotesState(
+    val notes: List<Note> = emptyList(),
+    val isLoading: Boolean = false
+)
+
