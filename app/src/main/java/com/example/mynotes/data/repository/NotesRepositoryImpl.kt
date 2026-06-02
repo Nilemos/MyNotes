@@ -1,11 +1,12 @@
-package com.example.mynotes.Data.repository
+package com.example.mynotes.data.repository
 
-import com.example.mynotes.Data.database.NoteDao
-import com.example.mynotes.Data.database.NoteEntity
-import com.example.mynotes.Domain.model.Note
-import com.example.mynotes.Domain.repository.NotesRepository
+import com.example.mynotes.data.database.NoteDao
+import com.example.mynotes.data.database.NoteEntity
+import com.example.mynotes.domain.model.Note
+import com.example.mynotes.domain.repository.NotesRepository
+import javax.inject.Inject
 
-class NotesRepositoryImpl(
+class NotesRepositoryImpl @Inject constructor(
     private val noteDao: NoteDao
 ): NotesRepository {
     override suspend fun getAllNotes(): List<Note> {

@@ -16,7 +16,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.mynotes.Domain.model.Note
+import com.example.mynotes.domain.model.Note
 import com.example.mynotes.ui.viewmodels.NotesViewModel
 
 @Composable

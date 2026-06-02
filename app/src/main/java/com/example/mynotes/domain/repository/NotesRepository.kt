@@ -1,6 +1,6 @@
-package com.example.mynotes.Domain.repository
+package com.example.mynotes.domain.repository
 
-import com.example.mynotes.Domain.model.Note
+import com.example.mynotes.domain.model.Note
 
 interface NotesRepository {
     suspend fun getAllNotes(): List<Note>

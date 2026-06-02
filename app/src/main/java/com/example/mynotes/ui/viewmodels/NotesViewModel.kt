@@ -1,17 +1,19 @@
 package com.example.mynotes.ui.viewmodels
 
-import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.mynotes.Domain.model.Note
-import com.example.mynotes.Domain.usecase.AddNotesUseCase
+import com.example.mynotes.domain.model.Note
+import com.example.mynotes.domain.usecase.AddNotesUseCase
+import com.example.mynotes.domain.usecase.GetNotesUseCase
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import com.example.mynotes.Domain.usecase.GetNotesUseCase
 
-class NotesViewModel(
+import javax.inject.Inject
+
+@HiltViewModel
+class NotesViewModel @Inject constructor(
     private val getNotesUseCase: GetNotesUseCase,
     private val addNoteUseCase: AddNotesUseCase
 ): ViewModel(){
