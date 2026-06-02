@@ -16,8 +16,8 @@ A notes android app using kotlin + jetpack compose, MVVM, Clean Architecture.
 
 1. <s>Build an app skeleton</s>
 2. <s>Implement an editable Title and Text of note</s>
-3. Replace a manual DI with Hilt or Koin                  <---- IN PROGRESS
-    * Unit-tests
+3. <s>Replace a manual DI with Hilt or Koin</s> 
+    * Unit-tests <---- IN PROGRESS
     * UI tests
 4. Implement a VOSK AI voice input
     * permission handling
