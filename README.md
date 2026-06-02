@@ -25,7 +25,7 @@ A notes android app using kotlin + jetpack compose, MVVM, Clean Architecture.
 6. Implement a custom in-app gestures
 7. Voice to ready task converting feature
 7. Error handling 
-8. Closed test
+8. Private test
 9. Analytics & Crash reports
 10. App polishing 
 11. Release preparation 
